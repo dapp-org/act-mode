@@ -24,8 +24,7 @@
     "uint256"
 ))
 
-(defvar act-keywords
-  '(
+(defvar act-keywords '(
     "#else"
     "#fi"
     "#if"
@@ -45,7 +44,7 @@
     "such that"
     "types"
     "where"
-    ))
+))
 
 (defvar act-identifier-regexp
   "\\([a-zA-Z0-9]\\|-\\)+")
