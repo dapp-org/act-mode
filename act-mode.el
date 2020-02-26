@@ -26,11 +26,13 @@
 
 (defvar act-keywords
   '(
+    "#else"
+    "#fi"
+    "#if"
+    "#then"
     "balance"
     "behaviour"
     "calls"
-    "else"
-    "fi"
     "for all"
     "gas"
     "if"
@@ -41,7 +43,6 @@
     "stack"
     "storage"
     "such that"
-    "then"
     "types"
     "where"
     ))
