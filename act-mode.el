@@ -24,13 +24,14 @@
     "uint256"
 ))
 
-(defvar act-keywords
-  '(
+(defvar act-keywords '(
+    "#else"
+    "#fi"
+    "#if"
+    "#then"
     "balance"
     "behaviour"
     "calls"
-    "else"
-    "fi"
     "for all"
     "gas"
     "if"
@@ -41,10 +42,9 @@
     "stack"
     "storage"
     "such that"
-    "then"
     "types"
     "where"
-    ))
+))
 
 (defvar act-identifier-regexp
   "\\([a-zA-Z0-9]\\|-\\)+")
