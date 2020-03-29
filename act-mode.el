@@ -85,8 +85,8 @@ First match should be a keyword and second an identifier."
   `((
      ;; stuff between double quotes
      ("\"\\.\\*\\?" . font-lock-string-face)
-     ;; : => + - * / == > < >= <= |-> are all special elements
-     (":\\|=>\\|+\\|-\\|*\\|/\\|==\\|<=\\|>=\\|>\\|<\\||->" . font-lock-builtin-face)
+     ;; : := => + - * / == > < >= <= |-> are all special elements
+     (":\\(?:=\\)+\\|=>\\|+\\|-\\|*\\|/\\|==\\|<=\\|>=\\|>\\|<\\||->" . font-lock-builtin-face)
      ( ,(regexp-opt act-keywords 'words) . font-lock-keyword-face)
      ( ,(regexp-opt act-types 'words) . font-lock-type-face)
      (act-match-behaviour-decl (1 font-lock-keyword-face)
